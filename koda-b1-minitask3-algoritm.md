@@ -21,17 +21,19 @@ flowchart TD
 
     input[/input r /]
 
-    dec1{r habis dibagi 7?}
+    dec1{r % 7 = 0?}
 
     proc3[phi = 3,14]
     proc4[phi = 22/7]
 
-    proc1["L= phi x r x r"]
+    dec2{Hitung Keliling ?}
 
+    proc1[L = phi x r x r]
 
-    proc2[K=2 x phi x r]
+    proc2[K = 2 x phi x r]
 
-    out1[/output L & K/]
+    out1[/output L/]
+    out2[/output K/]
 
     finish(((Finish)))
 
@@ -40,11 +42,14 @@ start --> input
 input --> dec1
 dec1 -. yes .->proc4
 dec1 -. no .->proc3
-proc4-->proc1
-proc3-->proc1
-proc1 --> proc2
-proc2 --> out1
---> finish
+proc4-->dec2
+proc3-->dec2
+dec2 -.no .->proc1
+dec2 -. yes .-> proc2
+proc1 --> out1
+proc2 --> out2
+out1 --> finish
+out2 --> finish
 
 
 ```
