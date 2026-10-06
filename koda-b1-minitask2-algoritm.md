@@ -34,7 +34,7 @@ flowchart TD
 
 
     start --> input
-    input --> =dec
+    input --> dec
     dec -. yes .-> out1
     dec -. no .-> out2
     out1 --> print1
