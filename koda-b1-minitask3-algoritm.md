@@ -53,3 +53,33 @@ out2 --> finish
 
 
 ```
+
+## Pseudo-code
+
+```pseudo-code
+DECLARE r = INTEGER
+DECLARE L = INTEGER
+DECLARE K = INTEGER
+DECLARE phi = INTEGER
+DECLARE isLuasCalculate = BOOLEAN
+
+INPUT r
+
+IF r / 7 = 0 THEN
+    phi <- 22/7
+ELSE
+    phi <- 3,14
+ENDIF
+
+
+INPUT isLuasCalculate
+
+IF isLuasCalculate = TRUE THEN
+    L <- phi * r * r
+    OUTPUT "Hasil Luas= ", L
+ELSE
+    K <- 2 x phi x r
+    OUTPUT "Hasil keliling= ", K
+ENDIF
+
+```

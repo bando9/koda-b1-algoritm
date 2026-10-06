@@ -2,13 +2,15 @@
 
 ## Deskriptif
 
+```
 1. Mulai
 2. Masukkan nilai A = 1
 3. Masukkan nilai B = 1
 4. Masukkan nilai C = 0
-5. hitung nilai hasil A+B\*C
+5. hitung nilai hasil A*B+C
 6. tampilkan hasil perhitungan
 7. Selesai
+```
 
 ## Flowchart
 
