@@ -29,7 +29,7 @@ flowchart TD
     proc1["L= phi x r x r"]
 
 
-    proc2[K=2 x 3,14 x r]
+    proc2[K=2 x phi x r]
 
     out1[/output L & K/]
 
