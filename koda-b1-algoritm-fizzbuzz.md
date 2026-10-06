@@ -23,14 +23,15 @@ flowchart TD
 
 start --> input
 input --> check1
-check1 -- YES --> increment
+check1 -- YES --> check2
 
-increment --> check2
 check2 -- YES --> fizzbuzz
 check2 -- NO --> nofizzbuzz
 
-fizzbuzz --> check1
-nofizzbuzz --> check1
+fizzbuzz --> increment
+nofizzbuzz --> increment
+
+increment --> check1
 
 check1 -- NO --> finish
 
