@@ -42,6 +42,7 @@ DECLARE A = INTEGER
 DECLARE B = INTEGER
 DECLARE C = INTEGER
 DECLARE HASIL = INTEGER
+DECLARE RESULT = INTEGER
 
 A <- 1
 B <- 1
@@ -50,5 +51,14 @@ C <- 0
 HASIL <- A*B+C
 
 OUTPUT "Hasil 1+1*0 = ", HASIL
+
+
+FUNCTION aritmetika (A,B,C) RETURNS INTEGER
+    RETURN A*B+C
+ENDFUNCTION
+
+RESULT <- aritmetika(1,1,0)
+
+OUTPUT "Hasil perhitungan ", aritmetika
 
 ```

@@ -45,3 +45,19 @@ flowchart TD
 
 
 ```
+
+## Pseudo code
+
+```pseudocode
+
+DECLARE NUMB : INTEGER
+
+INPUT NUMB
+
+IF NUMB % 2 = 0 THEN
+    OUTPUT "Angka ", NUMB, " adalah Bilangan Genap"
+ELSE
+    OUTPUT "Angka ", NUMB, " adalah Bilangan Ganjil"
+ENDIF
+
+```
